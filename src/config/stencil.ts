@@ -690,7 +690,6 @@ export const stencilShapes = {
                 size: { width: 60, height: 40 }
             }
         }
-
     ],
     advanced: [
         {

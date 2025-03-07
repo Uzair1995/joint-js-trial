@@ -1,0 +1,336 @@
+====================================================================================WF_SERVICE
+TicketCode - string - (IT,DR,LG)
+SurveyCode - string - (0001,0002)
+SurveyLinkLabel - string - Free Text
+SurveyAnswersLinkLabel - string - Free Text
+ServiceCommentsLabel - string - Free Text
+HideOrignalSubmitter
+EnableCancel_Reject
+APIToFillData - string - API Free Text
+====================================================================================WF_SERVICEWORKFLOW
+ApplicationOwner - boolean - Will not be added if not true
+AssignToLevel2 - boolean - Will not be added if not true
+DisableCancel_Reject - boolean - Will not be added if not true
+DisplayResponseTimmer - boolean - Will not be added if not true
+EnableReturnForMoreInfo - boolean - Will not be added if not true
+HideApprovalComments - boolean - Will not be added if not true
+HideReject - boolean - Will not be added if not true
+HideReturnForMoreInfo - boolean - Will not be added if not true
+NoReturnToSubmitter - boolean - Will not be added if not true
+NoTask - boolean - Will not be added if not true
+SendAttachments - boolean - Will not be added if not true
+ShowClearance - boolean - Will not be added if not true
+SLA_Is_Continous - boolean - Will not be added if not true
+
+API_GetNextUsers - string - API Free Text
+API_GetSLA_Minutes - string - API Free Text
+API_IsUserGroupLead - string - API Free Text
+API_SkipIF - string - API Free Text
+API_ToValidate - string - API Free Text
+CallApiAfterAssigning - string - API Free Text
+CallApiAfterMovingNext - string - API Free Text
+
+CustomFormName - string - Free Text
+
+EmailTo - string - (sdas@solutionsplus.ae;gsabbak@solutionsplus.ae;knagesh@solutionsplus.ae)
+
+API_BaseUrl - Dropdown Single Select P26Urls - (P26_HR_SERVICE, P26_SELF_SERVICE)
+UserID - Dropdown Single Select Service Attribute Tag - (AssignToBusinessAnalysis, AssignToQA, AssignToMyTeam, ExecutiveSponsorID, SystemUser)
+SkipIfUser - UserID - Dropdown Single Select User (817,956)
+SkipWhen - Dropdown Multi Select OR Service Attribute Tag with Value - (IsBidApproved::1 / LeaveType::2,3,11,12,19,20 / Usage::2320,2321,2322,2324,2325,2326,2326)
+SkipWhenAND - Dropdown Single Select AND Service Attribute Tag with Value - (IsBudgeted::0,IsAugmented::1) Comma seperated in a single string
+MoveNext - Dropdown Single Select Service Attribute Tag with Value - (IsBidApproved::1)
+
+Tag__IsOpportunityTypeGeneral==0::58,1::57
+Tag__RequestCategory==0::15,1::16,2::17,3::18
+ShowWhen==88_HeadingLabel::r
+EmployeeType==LTC::Skip
+EmployeeType==Permenant::2,LTC::14
+EmployeeType==Permenant::2,LTC::14,SP::14
+EmployeeType==SP::Skip
+LeaveType10==Permenant::2,LTC::14
+LeaveType13==Permenant::2,LTC::14,SP::Skip
+LeaveType17==Permenant::2,LTC::2,SP::Skip
+LeaveType6==Permenant::2,LTC::14
+====================================================================================WF_SERVICEWORKFLOW
+API_BaseUrl==P26_CLIENT_CUSTOM_SERVICE
+API_Show_Mandatory==lead-generation/wf/pricing/show-mandatory-board-approval
+APIToFillData==EAM/mgmt/p/Asset/all?code=SIMCard
+APIToFillData==self-services/loan/getpendingLoansTypes
+APIToFillData==wf/config/myTeamFlags/AssignToLevel2
+APIToFillData==wf/config/myTeamFlags/probation
+ApplicationCustodian
+ApplicationOwner
+ApplicationOwner
+EditableInSteps==216
+EmailTo
+EmailTo==tt;ee;oo;yyt
+EmployeeType==Date::ff
+EmployeeType==Link::va;ReadOnlyfield::dd
+ForceHide==1
+ForceHide==1
+ForceHide==1
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+ForceHideDisplayData
+gdgfghjk==dfgh;gfhgh;jkdjlds
+HideFromSubmiter
+HideFromSubmiter
+HideOnEmptyList
+HideReturnForMoreInfo
+IsHidden==false
+LookupCategory==108
+LookupCategory==110
+LookupCategory==116
+LookupCategory==19
+LookupCategory==19
+LookupCategory==29
+LookupCategory==30
+LookupCategory==35
+LookupCategory==38
+LookupCategory==39
+LookupCategory==4
+LookupCategory==40
+LookupCategory==41
+LookupCategory==42
+LookupCategory==5
+LookupCategory==50
+LookupCategory==52
+LookupCategory==53
+LookupCategory==55
+LookupCategory==55
+LookupCategory==55
+LookupCategory==6
+LookupCategory==62
+LookupCategory==62
+LookupCategory==73
+LookupCategory==74
+LookupCategory==8
+LookupCategory==80
+LookupCategory==90
+LookupCategory==90
+LookupType==10
+LookupType==10
+LookupType==10
+LookupType==11
+LookupType==11
+LookupType==12
+LookupType==13
+LookupType==13
+LookupType==14
+LookupType==14
+LookupType==15
+LookupType==15
+LookupType==16
+LookupType==16
+LookupType==16
+LookupType==19
+LookupType==20
+LookupType==21
+LookupType==22
+LookupType==23
+LookupType==3
+LookupType==3
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==6
+LookupType==7
+LookupType==8
+LookupType==9
+MandatoryWhen==accomodationTypeId::17,2677,2678,2676
+MandatoryWhen==accomodationTypeId::2677
+MandatoryWhen==accomodationTypeId::2678
+MandatoryWhen==accomodationTypeId::2678,2676
+MandatoryWhen==AnyExclusivity::0
+MandatoryWhen==AnyReferrals::1
+MandatoryWhen==Application::27,44
+MandatoryWhen==Application::27,44
+MandatoryWhen==attachmentTypeIDInput::1
+MandatoryWhen==attachmentTypeIDInput::2
+MandatoryWhen==attachmentTypeIDInput::3
+MandatoryWhen==BankGuaranteeRequired::0
+MandatoryWhen==basicInfo::1
+MandatoryWhen==BoardEndorsementApproval::0
+MandatoryWhen==BRDRequired::0
+MandatoryWhen==carTypeID::115
+MandatoryWhen==carTypeID::116
+MandatoryWhen==Durations::6
+MandatoryWhen==employmentTypeID::67,128
+MandatoryWhen==ICEndorsementApproval::0
+MandatoryWhen==IsDaleel::1
+MandatoryWhen==isEqualized::1
+MandatoryWhen==IsGeneralEnquiry::0
+MandatoryWhen==IsGovernment::1
+MandatoryWhen==IsNonMubadla::1_&
+MandatoryWhen==LeaveType::1,4
+MandatoryWhen==LeaveType::14
+MandatoryWhen==LeaveType::5
+MandatoryWhen==LeaveType::7,8,9,21,6,10,15,22,23
+MandatoryWhen==maritalStatusID::753,9
+MandatoryWhen==nationality::444
+MandatoryWhen==nationality::-444
+MandatoryWhen==Priority::0
+MandatoryWhen==Recommendation::10249
+MandatoryWhen==SalaryChange::1
+MandatoryWhen==SickLeaveChoiceID::362
+MandatoryWhen==SickLeaveChoiceID::362;duration=6
+MandatoryWhen==SpouseReciveEducationAssistance::1
+MandatoryWhen==To::0,To::null
+MandatoryWhen==TotalAmount::550|>=
+MandatoryWhen==Type::0
+MandatoryWhen==type::1
+MandatoryWhen==Type::1
+MandatoryWhen==Type::1
+MandatoryWhen==UpdatePriceInCRM::1
+MaxValue==100
+MaxValue==16
+MaxValue==23
+MaxValue==3
+MaxValue==NowDate
+MinValue==23
+MinValue==MonthFirst
+MinValue==NowDate
+neew==dd
+OnChangeAPI==/ac/incident-report/severity-sub-types-by-severity?severity={Severity}
+OnChangeAPI==/ac/privilege/by-application-and-clientId?applicationID={Application}&clientID={Client}&isEnableForServiceRequest=true
+OnChangeAPI==/ac/privilege/by-roleId?roleId={Roles}&isEnableForServiceRequest=true
+OnChangeAPI==/ac/role/by-application-and-clientlookupid?applicationID={Application}&clientLookupId={Client}&isEnableForServiceRequest=true
+OnChangeAPI==/ac/service-applications/application-by-groupid
+OnChangeAPI==/ac/service-applications/application-by-groupid-and-ocids?groupId={ApplicationGroup}&ocGroupId=&ocBusinessUnitId=&ocDepartmentId=
+OnChangeAPI==/ac/service-applications/application-client/all-by-app-for-service/{Application}
+OnChangeAPI==/client-custom/football/lookup/employee/get-training-total-amount/{rang}
+OnChangeAPI==/hr/employee/getprobationdetail
+OnChangeAPI==/hr/oc/5
+OnChangeAPI==/hr/oc/6
+OnChangeAPI==/self-services/loan/getpendingAmount
+OrgnizationStructureManager
+OrgnizationStructureManager
+RegEx==!/^\+?[0-9]{9,32}
+RegEx==/^\+?[0-9]{0,32}$/
+RegEx==^AE\d{21}$
+ShowWhen==accomodationTypeId::17
+ShowWhen==accomodationTypeId::17,2677,2678,2676
+ShowWhen==accomodationTypeId::2677
+ShowWhen==accomodationTypeId::2677,2678
+ShowWhen==accomodationTypeId::2678
+ShowWhen==accomodationTypeId::2678,2676
+ShowWhen==AnyExclusivity::0
+ShowWhen==AnyReferrals::1
+ShowWhen==attachmentTypeIDInput::1
+ShowWhen==attachmentTypeIDInput::2
+ShowWhen==attachmentTypeIDInput::3
+ShowWhen==BankGuaranteeRequired::0
+ShowWhen==basicInfo::1
+ShowWhen==BoardEndorsementApproval::0
+ShowWhen==BRDRequired::0
+ShowWhen==carTypeID::115
+ShowWhen==carTypeID::116
+ShowWhen==employmentTypeID::67,128,
+ShowWhen==ICEndorsementApproval::0
+ShowWhen==IsDaleel::1
+ShowWhen==isEqualized::1
+ShowWhen==IsGeneralEnquiry::0
+ShowWhen==IsGovernment::1
+ShowWhen==IsNonMubadla::1_&
+ShowWhen==LeaveType::1,4
+ShowWhen==LeaveType::14
+ShowWhen==LeaveType::5
+ShowWhen==LeaveType::7,8,9,21,6,10,15,22,23
+ShowWhen==maritalStatusID::753,9
+ShowWhen==nationality::444
+ShowWhen==nationality::-444
+ShowWhen==RadioButton::yes,no
+ShowWhen==RadioButton::yes,no
+ShowWhen==Recommendation::10249
+ShowWhen==RequestCategory::0
+ShowWhen==RequestCategory::1
+ShowWhen==RequestCategory::2
+ShowWhen==RequestCategory::3
+ShowWhen==RequestCategory0::4
+ShowWhen==RequestCategory1::3
+ShowWhen==RequestCategory2::2
+ShowWhen==RequestCategory3::2
+ShowWhen==SalaryChange::1
+ShowWhen==SickLeaveChoiceID::362
+ShowWhen==SickLeaveChoiceID::362
+ShowWhen==SpouseReciveEducationAssistance::1
+ShowWhen==TAAG::2,3,6
+ShowWhen==TotalAmount::550|>=
+ShowWhen==Type::0
+ShowWhen==type::1
+ShowWhen==Type::1
+ShowWhen==Type::1
+ShowWhen==TypeID::11
+Value==0
+Value==0001
+Value==1
+Value==Employee.BankName
+Value==Employee.Email
+Value==Employee.EmployeeNo
+Value==Employee.FullName
+Value==Employee.FullNameAr
+Value==Employee.IBAN
+Value==Employee.Manager
+Value==Employee.MobilePhone
+Value==Employee.OCName
+Value==Employee.OCNameAr
+Value==Employee.OtherPhone
+Value==Employee.PolicyResignDate
+Value==Employee.Title
+Value==Employee.TitleAr
+Value==https://dev-esolutions.solutionsplus.ae/api/recruitment/contract/preview-contract/{TicketID}
+Value==https://dev-esolutions.solutionsplus.ae/api/recruitment/offer/preview-offer/{TicketID}
+Value==https://miteuae.sharepoint.com/:w:/s/eSolutions/EV9ryrH4e45PmEutVt7NKbwBM6IC2olhKV5Hs1M7S1sJqA?e=HrqeS8
+Value==https://qa-esolutions.solutionsplus.ae/api/EAM/wf/MobileDeviceTicket/duContract/{TicketID}
+Value==https://qa-esolutions.solutionsplus.ae/services/srv/fill/0001?TicketID={TicketID}
+Value==Leave.LeavesAccured
+Value==Leave.LeavesBalance
+Value==Leave.LeavesEncashmentRemaining
+Value==Leave.LeavesEncashmentTaken
+Value==NowDate
+Value==Tag__CurrencyID
+Value==Tag__GradeID
+Value==Tag__MaxSalary
+Value==Tag__MinSalary
+Value==Tag__PostingLocationID
+Value==Tag__PostingLocationID0
+Value==Tag__SelectedCar
+Value==Tag__SelectedDriver
+VisibleInSteps==216,217,218,219,220,221
